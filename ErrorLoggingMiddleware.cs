@@ -20,7 +20,7 @@ namespace YourCellarSyncServer.Helper
             try {
                 await _next(context);
             } catch (Exception e) {
-                Logger.Exception(e, "Middleware caught the following error.");
+                Logger.Exception(e, "Error found by middleware.");
                 throw;
             }
         }
